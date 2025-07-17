@@ -17,7 +17,7 @@ suppressPackageStartupMessages({
   library(Cairo)
 })
 
-Rcpp::sourceCpp("C:/Users/innav/Desktop/BOOTEI/BOOTEI.cpp")
+Rcpp::sourceCpp("BOOTEI.cpp")
 set.seed(123)
 
 # ────────────────────────────────────────────────────────────────
@@ -194,5 +194,5 @@ power_plot <- power_tbl %>%
 
 print(power_plot)
 
-# ggsave("C:/Users/innav/Desktop/BOOTEI/spearman-alpha.pdf", plot = type1_plot, device = cairo_pdf, width = 6, height = 5)
-# ggsave("C:/Users/innav/Desktop/BOOTEI/spearman-power.pdf", plot = power_plot, device = cairo_pdf, width = 6, height = 5)
+# ggsave("spearman-alpha.pdf", plot = type1_plot, device = cairo_pdf, width = 6, height = 5)
+# ggsave("spearman-power.pdf", plot = power_plot, device = cairo_pdf, width = 6, height = 5)
