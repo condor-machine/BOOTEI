@@ -50,6 +50,9 @@ y <- sample(c("yes", "no"), 10, replace = TRUE)
 
 # Run BOOTEI χ² test with 100 bootstrap replicates and 1000 permutations
 bootei(x, y, test = "chisq", B = 100, R = 1000)
+
+# Run standard permutation χ² test (no bootstrap averaging)
+bootei(x, y, test = "chisq", B = 1, R = 1000)
 ```
 
 
