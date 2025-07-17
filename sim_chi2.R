@@ -15,6 +15,8 @@ suppressPackageStartupMessages({
   library(tidyverse)   # dplyr, tibble, ggplot2 …
 })
 
+library(Cairo)
+
 Rcpp::sourceCpp("C:/Users/innav/Desktop/BOOTEI/BOOTEI.cpp")
 set.seed(123)
 
