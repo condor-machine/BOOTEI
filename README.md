@@ -4,7 +4,6 @@ Code for **BOOTEI: Bootstrap Ensemble Inference**, a method to improve permutati
 
 This repository contains the core C++ implementation and Monte Carlo simulation scripts used in the paper:
 
-> *[BOOTEI: Smoothing permutation tests with bootstrap ensembles]* (full citation coming soon)
 
 ---
 
