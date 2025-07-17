@@ -37,4 +37,21 @@ This repository contains the core C++ implementation and Monte Carlo simulation 
 Each simulation script sources the `BOOTEI.cpp` file and compares standard permutation vs BOOTEI (with bootstrap smoothing) under varying sample sizes, significance levels, and strength of association.
 
 
+## Example Usage (from R)
+
+```r
+# Load the BOOTEI engine (compile once per session)
+Rcpp::sourceCpp("BOOTEI.cpp")
+
+# Simulated categorical variables
+set.seed(910)
+x <- sample(c("A", "B"), 10, replace = TRUE)
+y <- sample(c("yes", "no"), 10, replace = TRUE)
+
+# Run BOOTEI χ² test with 100 bootstrap replicates and 1000 permutations
+bootei(x, y, test = "chisq", B = 100, R = 1000)
+```
+
+
+
 
