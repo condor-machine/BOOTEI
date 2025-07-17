@@ -14,6 +14,7 @@
 suppressPackageStartupMessages({
   library(tidyverse)
   library(MASS)        # mvrnorm for latent normal simulation
+  library(Cairo)
 })
 
 Rcpp::sourceCpp("C:/Users/innav/Desktop/BOOTEI/BOOTEI.cpp")
